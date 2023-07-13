@@ -2,7 +2,7 @@
 - hosts: tomcatservers
   become: yes
   gather_facts: False
-  tasks:
+  tasks:no
 
   - name: Install EPEL-release
     yum: name=epel-release state=present
